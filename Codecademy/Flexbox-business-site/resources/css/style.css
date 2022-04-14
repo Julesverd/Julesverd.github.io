@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family:"Permanent Marker";
+    color: black;
+    background-color: rgb(95, 199, 192);
+    font-size: 26px;
+    text-align: center;
+    background-image: url("./img/vishwanth-p-5ID_cSbc8Ps-unsplash.jpg");    
+    
+  }
+  
+  a {
+    color: rgb(3, 61, 83);
+  }
+  
+  h2,
+  h3,
+  h4,
+  p {
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10%;
+  }
+  
+  .navbar p {
+    display: inline-block;
+    padding: 10px 10px;
+  }
+  
+  .main {
+    padding-top: 35px;
+    opacity: 0.9;
+  }
+  
+  .mission {
+    display: flex;
+    height: 300px;
+    background-image: url("./img/mike-kenneally-TD4DBagg2wE-unsplash.jpg");
+    padding-top: 35px;
+  }
+  
+  .mission .content {
+    margin: auto;
+    background-color: rgb(236, 206, 195);
+    width: 100%;
+    opacity: 0.6;
+  }
+  
+  #portfolio {
+    min-height: 500px;
+    margin: auto;
+    padding-top: 90px;
+  }
+  
+  .companies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .company img {
+    margin-right: auto;
+    margin-left: auto;
+    width: 800px;
+    padding: 5px;
+    height: auto;
+    display: center;
+    
+  }
+  
+  .company span {
+    padding: 5px;
+    min-width: auto;
+  }
+  
+  .team {
+    background-image: url("./img/tamas-pap-RJPrJQXlmng-unsplash.jpg");
+    padding-top: 70px;
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    scroll-behavior: smooth;
+    width: auto;
+  }
+  
+  .teammate {
+    padding: 10px;
+    color: white;
+    flex-basis: 280px;
+    font-family: "Grape Nuts";
+  }
+  
+  .teammate img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: auto;
+  }
+  
+
+  @media only screen and (max-width: 960px) {
+    .main {
+      padding-top: 0;
+    }
+    }
+    
+    @media only screen and (max-width: 700px) {
+      .supporting img {
+        display: none;
+      }
+    }
+    
+    
+
+  .contact,
+  .copyright {
+    padding-top: 20px;
+  }
+  
