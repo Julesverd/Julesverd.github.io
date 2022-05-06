@@ -21,9 +21,6 @@ body {
   --font-color: #323232;
 }
 
-.heart {
-  color: red;
-}
 
 h2 {
   font-family: "Proza Libre", sans-serif;
@@ -62,9 +59,16 @@ nav {
 
 .portrait {
   width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   border-radius: var(--border-radius);
   flex-shrink: 0;
+  position: sticky;
 }
+
+
 
 
 
