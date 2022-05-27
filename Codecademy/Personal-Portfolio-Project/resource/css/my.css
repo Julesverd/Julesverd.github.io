@@ -63,19 +63,19 @@ h1 {
 /* NAVIGATION */
 
 .container {
-
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 200;
-  padding: 16px 36px;
+  padding: 16px 32px;
   background-color: #323232;
   border-bottom: 3px solid white;
   color: white;
-
-
-    display: flex;
+  
+  
+  margin: 0 auto;
+  display: flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -108,15 +108,29 @@ h1 {
 
 }
 
+.navigation-items li {
+  list-style: none; 
+}
+
+
 .navigation-items li:hover {
   background-color:#f8b600;
 }
 
 .hamburger {
-  position: absolute;
+  display: block;
+  position: relative;
+
+  user-select: none;
+
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+
   top: 1rem;
   right: 1rem;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
@@ -125,7 +139,7 @@ h1 {
 
 .hamburger .bar {
     display: block;
-    width: 100%;
+    width: 33px;
     height: 4px;
     margin-bottom: 5px;
     position: relative;
@@ -138,38 +152,7 @@ h1 {
     transition: 0.4s;
 }
 
-@media (max-width: 400px) {
-  .hamburger {
-    display: flex;
-  }
-  
-  .navigation-items {
-   display: none; 
-  }
 
-    .container {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .navigation-items ul {
-      width: 100%;
-      flex-direction: column;
-    }
-
-    .navigation-items li {
-      text-align: center;
-    }
-
-    .navigation-items li a {
-      padding: .5rem 1rem;
-    }
-
-    .navigation-items.active {
-      display: flex;
-    }
-
-}
 
 .hamburger:hover span:nth-child(2) {
     transform: translateX(10px);
@@ -178,8 +161,45 @@ h1 {
 
 .navigation-items. is-active:hover span {
     background-color:#f8b600;
+    border-radius: 30px;
+    flex-shrink: 0
 }
 
+.hamburger.is-active span:nth-child(1) {
+  transform: translate(0px, -2px) rotate(45deg);
+}
+
+.hamburger.is-active span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(15px);
+}
+
+.hamburger.is-active span:nth-child(3) {
+  transform: translate(-3px, 3px) rotate(-45deg);
+}
+
+.hamburger.is-active:hover span {
+  background-color:#f8b600;
+}
+
+.navigation-items {
+  display: none;
+  flex: 1 1 0%;
+  justify-content: flex-end;
+  margin: 0 -16px;
+
+}
+
+
+
+@media (min-width: 900px) {
+  .hamburger {
+    display: none;
+  }
+  .navigation-items {
+    display: flex;
+  }
+}
 
 
 .portrait {
